@@ -1,0 +1,230 @@
+body {
+  background-color: lightskyblue;
+  background-image: url(media/pic/vector-feb-2021-85_generated.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 48px;
+  color: #1f0318ff;
+  text-shadow: 0 0 5px;
+}
+
+#first {
+  /* grid-area: first; */
+  /* display: flex;
+  justify-content: center;
+  margin-left: 0; */
+}
+
+#second > {
+  background-color: #a2d2ff;
+  /* grid-area: second; */
+  display: flex;
+  /* justify-content: flex-end; */
+  flex-grow: 1;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  /* gap: 2px; */
+}
+
+.jonasbild {
+  border: 4px solid;
+  border-radius: 50%;
+  padding: 1px;
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+#third {
+  /* grid-area: third; */
+  /* background-color: #ffafcc; */
+
+  /* flex-direction: column; */
+  max-width: 5px;
+  max-height: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+a {
+  background-color: #ffc8dd;
+  display: flex;
+  height: 20px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+#fourth {
+  grid-area: fourth;
+}
+
+#fifth {
+  grid-area: fifth;
+}
+
+.second {
+  /* navbar */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-grow: 1;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+#globe {
+  /* language */
+  grid-area: third;
+  display: inline;
+  max-width: 5px;
+  max-height: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.fifth {
+  justify-content: flex-start;
+}
+#footer {
+  display: flex;
+  background-color: #1e1a1dff;
+  color: #7f534bff;
+  font-size: 1px;
+  justify-content: flex-end;
+}
+h2 {
+  display: flex;
+  font-size: 16px;
+  color: #1f0318ff;
+  text-align: center;
+  border: silver;
+}
+
+.palette {
+  background-color: #cdb4db;
+  background-color: #ffc8dd;
+  background-color: #ffafcc;
+  background-color: #bde0fe;
+  background-color: #a2d2ff;
+}
+@media only screen and (max-width: 980px) {
+  body {
+    background-color: #a2d2ff;
+  }
+  #header {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    flex-grow: 1;
+  }
+
+  h1 {
+    font-size: 48px;
+    color: #1f0318ff;
+    text-shadow: 0 0 5px;
+  }
+
+  /*************************************
+ * Det stora rutnätet
+ *************************************/
+  /* Grid */
+
+  .grid1 {
+    background-image: url(media/pic/vector-feb-2021-85_generated.jpg);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "first second third"
+      "fourth second third"
+      "fifth fifth fifth";
+    margin-left: auto;
+    height: 20px;
+    width: auto;
+    gap: 10px 10px;
+  }
+
+  #first {
+    grid-area: first;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  #second > img {
+    background-color: #a2d2ff;
+    display: flex;
+    flex-grow: 1;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    /* max-height: 100px;
+    height: 50px; */
+    /* gap: 2px; */
+  }
+
+  /* img {
+    height: 50%;
+    width: 50%;
+  } */
+
+  .jonasbild {
+    border: 4px solid;
+    border-radius: 50%;
+    padding: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 50%;
+  }
+
+  #third {
+    grid-area: third;
+    display: inline;
+    max-width: 5px;
+    max-height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  #fourth {
+    grid-area: fourth;
+  }
+
+  #fifth {
+    grid-area: fifth;
+  }
+
+  footer {
+    display: flex;
+    background-color: #1e1a1dff;
+    color: #7f534bff;
+    font-size: 1px;
+    justify-content: flex-end;
+  }
+  h2 {
+    display: flex;
+    font-size: 16px;
+    color: #1f0318ff;
+    text-align: center;
+    border: silver;
+  }
+}

@@ -1,0 +1,73 @@
+/*************************************
+ * Det stora rutnätet
+ *************************************/
+/* Grid */
+.grid1 {
+  background-image: url(media/pic/vector-feb-2021-85_generated.jpg);
+  display: grid;
+  /* grid-area: first; */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "first second third"
+    "fourth second third"
+    "fifth fifth fifth";
+  margin-left: auto;
+  height: 200px;
+  width: auto;
+}
+#first {
+  grid-area: first;
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+}
+
+#second {
+  grid-area: second;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-grow: 1;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+#third {
+  grid-area: third;
+}
+
+#fourth {
+  grid-area: fourth;
+}
+
+#fifth {
+  grid-area: fifth;
+}
+
+.second {
+  /* navbar */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-grow: 1;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+.globe {
+  /* language */
+  grid-area: third;
+  display: inline;
+  max-width: 5px;
+  max-height: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.fifth {
+  justify-content: flex-start;
+}
